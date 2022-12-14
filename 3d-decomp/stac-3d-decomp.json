@@ -1,0 +1,123 @@
+{
+	"stac_version": "1.0.0",
+	"stac_extensions": [
+		"https://stac-extensions.github.io/sar/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/view/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/scientific/v1.1.0/schema.json"
+	],
+	"type": "Feature",
+	"id": "SNAPPING_3D_DECOMP_AVG_DEFO_VEL_SAMPLE",
+	"bbox": [
+		-30.046712956246324,
+		36.997096120903144,
+		-26.79777995624633,
+		39.01881312090315
+	],
+	"geometry": {
+		"type": "Polygon",
+		"coordinates": [
+			[
+				[
+					123.0072,
+					10.454015
+				],
+				[
+					123.65187,
+					13.726985
+				],
+				[
+					125.87542,
+					13.300287
+				],
+				[
+					125.20314,
+					10.018878
+				],
+				[
+					123.0072,
+					10.454015
+				]
+			]
+		]
+	},
+	"properties": {
+		"created": "2022-12-13",
+		"date_time": "2020-08-14",
+		"start_datetime": "2016-08-14",
+		"end_datetime": "2020-08-20",
+		"processing:level": "L3",
+		"processing:lineage": "SNAPPING 3D decomposition ",
+		"processing:sftware": {
+			"SNAPPING 3D decomposition service"
+		},
+		"proj:epsg": "4326",,
+		"sar:instrument_mode": "IW",
+		"sar:polarizations": "VV",
+		"sar:resolution_range": 100,
+		"sar:resolution_azimuth": 100,
+		"sci:publications": [{
+				"doi": "10.3390/rs14236075",
+				"citation": "SNAPPING Services on the Geohazards Exploitation Platform for Copernicus Sentinel-1 Surface Motion Mapping"
+			}
+		],
+	},
+	"links": [{
+			"href": "https://raw.githubusercontent.com/stac-extensions/insar/main/examples/item-3d-decomp.json",
+			"rel": "self"
+		},
+		{
+			"href": "./snapping_psi_thessaloniki_asc.json",
+			"rel": "derived_from"
+		},
+		{
+			"href": "./snapping_psi_thessaloniki_desc.json",
+			"rel": "derived_from"
+		}
+	],
+	"assets": {
+		"up": {
+			"href": "./snapping_Up_defo.tif",
+			"roles": [
+				"data",
+				"Up component of average deformation velocity"
+			]
+		},
+		"up_legend": {
+			"href": "./snapping_Up_defo.png",
+			"roles": [
+				"legend",
+				"legend Up component of average deformation velocity"
+			]
+		},
+		"up_th": {
+			"href": "./snapping_Up_defo.legend.png",
+			"roles": [
+				"thumbnail",
+				"Up component of average deformation velocity"
+			]
+		},
+		"east": {
+			"href": "./snapping_East_defo.tif",
+			"roles": [
+				"data",
+				"East component of average deformation velocity"
+			]
+		},
+		"east_legend": {
+			"href": "./snapping_East_defo.legend.png",
+			"roles": [
+				"legend",
+				"legend of East component of average deformation velocity"
+			]
+		},
+		"east_th": {
+			"href": "./snapping_East_defo.tif.png",
+			"roles": [
+				"thumbnail",
+				"East component of average deformation velocity"
+			]
+		}
+	}
+}
