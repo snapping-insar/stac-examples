@@ -1,5 +1,13 @@
 {
   "stac_version": "1.0.0",
+  "stac_extensions": [
+	"https://stac-extensions.github.io/sar/v1.1.0/schema.json",
+	"https://stac-extensions.github.io/insar/v1.1.0/schema.json",
+	"https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+	"https://stac-extensions.github.io/timeseries/v1.1.0/schema.json",
+	"https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+	"https://stac-extensions.github.io/scientific/v1.1.0/schema.json"
+  ], 
   "type": "Feature",
   "id": "snapping_psi_thessaloniki_asc",
   "geometry": {
@@ -94,9 +102,9 @@
 				"citation": "SNAPPING Services on the Geohazards Exploitation Platform for Copernicus Sentinel-1 Surface Motion Mapping"
       }
     ]
-   "insar:reference_datetime": "2021-09-19",
-   "insar:processsing_dem": "SRTM1",
-   "insar:geocoding_dem": "SRTM1",
+  "insar:reference_datetime": "2021-09-19",
+  "insar:processsing_dem": "SRTM1",
+  "insar:geocoding_dem": "SRTM1",
   "assets": {
     "csv": {
       "href": "./snapping_psi_thessaloniki_asc.csv",
@@ -112,7 +120,7 @@
       "rel": "coverage",
       "href": "./snapping_psi_thessaloniki_asc.json",
       "type": "application/prs.coverage+json",
-      "ts:api": "egms"
+      "ts:api": "snapping"
     }
   ]
 }
