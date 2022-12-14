@@ -1,126 +1,120 @@
 {
-  "stac_version": "1.0.0",
-  "stac_extensions": [
-	"https://stac-extensions.github.io/sar/v1.1.0/schema.json",
-	"https://stac-extensions.github.io/insar/v1.1.0/schema.json",
-	"https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-	"https://stac-extensions.github.io/timeseries/v1.1.0/schema.json",
-	"https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-	"https://stac-extensions.github.io/scientific/v1.1.0/schema.json"
-  ], 
-  "type": "Feature",
-  "id": "snapping_psi_thessaloniki_asc",
-  "geometry": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          118.30944,
-          -3.4575
-        ],
-        [
-          120.67306,
-          -3.4575
-        ],
-        [
-          120.67306,
-          -2.2127778
-        ],
-        [
-          118.30944,
-          -2.2127778
-        ],
-        [
-          118.30944,
-          -3.4575
-        ]
-      ]
-    ]
-  },
-  "properties": {
-    "datetime": "2021-09-19",
-    "created": "2022-07-28T09:14:47.1979049Z",
-    "start_datetime": "2021-09-19",
-    "end_datetime": "2022-06-22",
-    "processing:level": "L3",
-    "processing:lineage": "SNAPPING PSI Med service hosted on Geohazards Thematic Exploitation Platform",
-    "processing:sftware": {
-      "SNAPPING PSI Med: 1.0"
-    },
-    "proj:epsg": "4326",
-    "sat:orbit_state": "descending",
-    "sat:heading":"196.34",
-    "sat:relative_orbit": "82",
-    "sar:instrument_mode": "IW",
-    "sar:polarizations": "VV",
-    "sar:looks_range": 1,
-    "sar:looks_azimuth" : 1,
-    "sar:observation_direction": "right",
-    "sar:resolution_range": 4,
-    "sar:resolution_azimuth": 20,
-    "ts:dates": [
-      "2021-09-19",
-      "2021-10-01",
-      "2021-10-13",
-      "2021-10-25",
-      "2021-11-06",
-      "2021-11-18",
-      "2022-01-29",
-      "2022-02-10",
-      "2022-02-22",
-      "2022-03-06",
-      "2022-03-18",
-      "2022-03-30",
-      "2022-04-11",
-      "2022-04-23",
-      "2022-05-05",
-      "2022-05-17",
-      "2022-05-29",
-      "2022-06-10",
-      "2022-06-22"
-    ],
-    "ts:parameters": [
-      "Latitude",
-      "Longitude",
-      "LoS Avg Velocity",
-      "LoS Avg Standard Deviation Velocity",
-      "Coherence",
-      "Height",
-      "Incident Angle",
-      "Displacement"
-    ]
-  },
-  "bbox": [
-    118.30944,
-    -3.4575,
-    120.67306,
-    -2.2127778
-  ],
-  "sci:publications": [
-      {
-       	"doi": "10.3390/rs14236075",
-				"citation": "SNAPPING Services on the Geohazards Exploitation Platform for Copernicus Sentinel-1 Surface Motion Mapping"
-      }
-    ]
-  "insar:reference_datetime": "2021-09-19",
-  "insar:processsing_dem": "SRTM1",
-  "insar:geocoding_dem": "SRTM1",
-  "assets": {
-    "csv": {
-      "href": "./snapping_psi_thessaloniki_asc.csv",
-      "roles": [
-        "psi_results",
-        "data",
-        "psi results"
-      ]
-    },
-  },
-  "links": [
-    {
-      "rel": "coverage",
-      "href": "./snapping_psi_thessaloniki_asc.json",
-      "type": "application/prs.coverage+json",
-      "ts:api": "snapping"
-    }
-  ]
+	"stac_version": "1.0.0",
+	"stac_extensions": [
+		"https://stac-extensions.github.io/sar/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/insar/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/timeseries/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/scientific/v1.1.0/schema.json"
+	],
+	"type": "Feature",
+	"id": "snapping_psi_thessaloniki_asc",
+	"geometry": {
+		"type": "Polygon",
+		"coordinates": [
+			[
+				[
+					118.30944,
+					-3.4575
+				],
+				[
+					120.67306,
+					-3.4575
+				],
+				[
+					120.67306,
+					-2.2127778
+				],
+				[
+					118.30944,
+					-2.2127778
+				],
+				[
+					118.30944,
+					-3.4575
+				]
+			]
+		]
+	},
+	"properties": {
+		"datetime": "2021-09-19",
+		"created": "2022-07-28T09:14:47.1979049Z",
+		"start_datetime": "2021-09-19",
+		"end_datetime": "2022-06-22",
+		"processing:level": "L3",
+		"processing:lineage": "SNAPPING PSI Med service hosted on Geohazards Thematic Exploitation Platform",
+		"processing:sftware": "SNAPPING PSI Med: 1.0",
+		"proj:epsg": "4326",
+		"sat:orbit_state": "descending",
+		"sat:heading": "196.34",
+		"sat:relative_orbit": "82",
+		"sar:instrument_mode": "IW",
+		"sar:polarizations": "VV",
+		"sar:looks_range": 1,
+		"sar:looks_azimuth": 1,
+		"sar:observation_direction": "right",
+		"sar:resolution_range": 4,
+		"sar:resolution_azimuth": 20,
+		"ts:dates": [
+			"2021-09-19",
+			"2021-10-01",
+			"2021-10-13",
+			"2021-10-25",
+			"2021-11-06",
+			"2021-11-18",
+			"2022-01-29",
+			"2022-02-10",
+			"2022-02-22",
+			"2022-03-06",
+			"2022-03-18",
+			"2022-03-30",
+			"2022-04-11",
+			"2022-04-23",
+			"2022-05-05",
+			"2022-05-17",
+			"2022-05-29",
+			"2022-06-10",
+			"2022-06-22"
+		],
+		"ts:parameters": [
+			"Latitude",
+			"Longitude",
+			"LoS Avg Velocity",
+			"LoS Avg Standard Deviation Velocity",
+			"Coherence",
+			"Height",
+			"Incident Angle",
+			"Displacement"
+		]
+	},
+	"bbox": [
+		118.30944,
+		-3.4575,
+		120.67306,
+		-2.2127778
+	],
+	"sci:publications": [{
+		"doi": "10.3390/rs14236075",
+		"citation": "SNAPPING Services on the Geohazards Exploitation Platform for Copernicus Sentinel-1 Surface Motion Mapping"
+	}],
+	"insar:reference_datetime": "2021-09-19",
+	"insar:processsing_dem": "SRTM1",
+	"insar:geocoding_dem": "SRTM1",
+	"assets": {
+		"csv": {
+			"href": "./snapping_psi_thessaloniki_asc.csv",
+			"roles": [
+				"psi_results",
+				"data",
+				"psi results"
+			]
+		}
+	},
+	"links": [{
+		"rel": "coverage",
+		"href": "./snapping_psi_thessaloniki_asc.json",
+		"type": "application/prs.coverage+json",
+		"ts:api": "snapping"
+	}]
 }
