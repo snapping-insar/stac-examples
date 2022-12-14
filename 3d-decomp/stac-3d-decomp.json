@@ -64,7 +64,7 @@
 		],
 	},
 	"links": [{
-			"href": "https://raw.githubusercontent.com/stac-extensions/insar/main/examples/item-3d-decomp.json",
+			"href": "https://raw.githubusercontent.com/snapping-insar/stac-examples/main/3d-decomp/stac-3d-decomp.json",
 			"rel": "self"
 		},
 		{
