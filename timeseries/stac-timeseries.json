@@ -44,7 +44,7 @@
 		"end_datetime": "2022-06-22",
 		"processing:level": "L3",
 		"processing:lineage": "SNAPPING PSI Med service hosted on Geohazards Thematic Exploitation Platform",
-		"processing:sftware": "SNAPPING PSI Med: 1.0",
+		"processing:software": "SNAPPING PSI Med v1.0",
 		"proj:epsg": "4326",
 		"sat:orbit_state": "descending",
 		"sat:heading": "196.34",
@@ -94,10 +94,10 @@
 		120.67306,
 		-2.2127778
 	],
-	"sci:publications": [{
+	"sci:publications": {
 		"doi": "10.3390/rs14236075",
 		"citation": "SNAPPING Services on the Geohazards Exploitation Platform for Copernicus Sentinel-1 Surface Motion Mapping"
-	}],
+	},
 	"insar:reference_datetime": "2021-09-19",
 	"insar:processsing_dem": "SRTM1",
 	"insar:geocoding_dem": "SRTM1",
