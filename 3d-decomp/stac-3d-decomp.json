@@ -78,42 +78,38 @@
 			"href": "./snapping_Up_defo.tif",
 			"roles": [
 				"data",
-				"Up component of average deformation velocity"
+				"visual"
 			]
 		},
 		"up_legend": {
 			"href": "./snapping_Up_defo.png",
 			"roles": [
-				"legend",
-				"legend Up component of average deformation velocity"
+				"legend"
 			]
 		},
 		"up_th": {
 			"href": "./snapping_Up_defo.legend.png",
 			"roles": [
-				"thumbnail",
-				"Up component of average deformation velocity"
+				"visual"
 			]
 		},
 		"east": {
 			"href": "./snapping_East_defo.tif",
 			"roles": [
 				"data",
-				"East component of average deformation velocity"
+				"visual"
 			]
 		},
 		"east_legend": {
 			"href": "./snapping_East_defo.legend.png",
 			"roles": [
-				"legend",
-				"legend of East component of average deformation velocity"
+				"legend"
 			]
 		},
 		"east_th": {
 			"href": "./snapping_East_defo.tif.png",
 			"roles": [
-				"thumbnail",
-				"East component of average deformation velocity"
+				"visual",
 			]
 		}
 	}
