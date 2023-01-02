@@ -105,9 +105,9 @@
 		"csv": {
 			"href": "./snapping_psi_thessaloniki_asc.csv",
 			"roles": [
-				"psi_results",
+				"psi",
 				"data",
-				"psi results"
+				"visual"
 			]
 		}
 	},
